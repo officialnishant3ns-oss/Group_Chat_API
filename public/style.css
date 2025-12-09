@@ -94,3 +94,46 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+
+    .chatSection {
+        width: 95%;
+        height: 90vh;            
+        margin: 20px auto;
+        border-width: 3px;
+    }
+
+    .brand {
+        font-size: 20px;
+        padding: 12px;
+        text-indent: 10px;
+    }
+
+    .message {
+        max-width: 80%;          
+        font-size: 14px;
+    }
+
+    .messagebox {
+        padding: 10px;
+    }
+
+    .text {
+        height: 45px;
+        margin: 5px;
+        border-radius: 8px;
+    }
+
+    .text input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .text button {
+        width: 80px;
+        font-size: 16px;
+    }
+}
+
