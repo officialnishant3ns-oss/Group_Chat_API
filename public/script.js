@@ -28,6 +28,9 @@ function sendmessage(message) {
     messageinput.value = ''
 }
 
+socket.on('message', (data) => {
+    appendMessage(data, 'incoming')
+})  
 function appendMessage(data, type) {
     const messageDiv = document.createElement('div')
     let classname = type
