@@ -1,10 +1,8 @@
-
 const socket = io()
 let name
 do {
     name = prompt("Enter your name:")
 } while (!name)
-
 
 
 const messageContainer = document.querySelector('.messagebox')
@@ -30,7 +28,7 @@ function sendmessage(message) {
 
 socket.on('message', (data) => {
     appendMessage(data, 'incoming')
-})  
+})
 function appendMessage(data, type) {
     const messageDiv = document.createElement('div')
     let classname = type
